@@ -24,4 +24,4 @@ jobs:
           LAST_NAME: Octocat
         # 运行指令：输出环境变量
         run: |
-          echo ${{ github.ref }}
+          echo ${{ github.ref_slug }}
