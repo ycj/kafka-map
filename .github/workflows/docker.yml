@@ -27,4 +27,4 @@ jobs:
         push: true
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/kafka-map:latest
-          ${{ secrets.DOCKERHUB_USERNAME }}/kafka-map:1.3.1
+          ${{ secrets.DOCKERHUB_USERNAME }}/kafka-map:${{ github.head_ref || github.ref_name }}
